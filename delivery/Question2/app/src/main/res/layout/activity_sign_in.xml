@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.anthe.question2.Dare"
+    android:background="@drawable/background">
+
+    <TextView
+        android:text="@string/sign_in_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:id="@+id/txtvwHeading"
+        android:textSize="@dimen/sign_in_heading_size"
+        android:textColor="@color/sign_in_page_color"
+        android:fontFamily="serif"
+        android:textStyle="normal|bold" />
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/txtvwHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:id="@+id/relLayoutUsernme">
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:hint="@string/sign_in_text_hint_1"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:ems="10"
+            android:id="@+id/edtTxtUsername"
+            android:background="?android:attr/colorControlHighlight"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_below="@+id/relLayoutUsernme"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:hint="@string/sign_in_text_hint_2"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:ems="10"
+            android:id="@+id/edtTxtPasswrd"
+            android:background="?android:attr/colorControlHighlight"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <Button
+        android:text="@string/sign_in_button"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/btnSign"
+        android:textColor="@color/sign_in_button_color"/>
+</RelativeLayout>

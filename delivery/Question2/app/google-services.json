@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "494196040817",
+    "firebase_url": "https://dare2-cbcf9.firebaseio.com",
+    "project_id": "dare2-cbcf9",
+    "storage_bucket": "dare2-cbcf9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494196040817:android:ce3b040d23c6f60e",
+        "android_client_info": {
+          "package_name": "com.example.anthe.question2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494196040817-648b53s939b8ro0dqu4q6ccacvmacpop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyK3t5ZuwjDpYZYzhmitYCRIAsJhZlcUc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

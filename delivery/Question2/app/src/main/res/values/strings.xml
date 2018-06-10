@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Buckys Fleet Application</string>
+    <string name="sign_in_heading">Buckys Fleet</string>
+    <string name="sign_in_text_hint_1">Email</string>
+    <string name="sign_in_text_hint_2">Password</string>
+    <string name="sign_in_button">Log in</string>
+    <string name="title_activity_dare_user">dareUser</string>
+    <!--Home page!-->
+    <string name="title_activity_home">Home Page</string>
+
+    <!--Navigation drawer!-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_one">Home</string>
+    <string name="navigation_drawer_two">Deliveries</string>
+    <string name="navigation_drawer_three">Completed deliveries</string>
+    <string name="navigation_drawer_four">Help</string>
+    <!--Notify!-->
+    <string name="notify_button">Notify Customer</string>
+    <!--Completed deliveries!-->
+    <string name="completed_del_heading">My completed deliveries</string>
+    <!--customers sheet!-->
+    <string name="cust_sheet_customers_name">Full customers name</string>
+    <string name="cust_sheet_customers_id">Please enter the customers ID</string>
+    <!--Delivery!-->
+    <string name="delivery_customers_name">customer Name</string>
+    <string name="delivery_customers_id">customer ID</string>
+    <string name="delivery_customers_goods">Delivery type</string>
+    <string name="delivery_customers_km">km to travel</string>
+    <string name="delivery_customers_address">Address</string>
+</resources>

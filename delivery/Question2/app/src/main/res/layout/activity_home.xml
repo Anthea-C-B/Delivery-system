@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    >
+
+    <TextView
+        android:text="@string/title_activity_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txtvwHomeHeading"
+        android:textColor="@color/sign_in_page_color"
+        android:textSize="@dimen/sign_in_heading_size"
+        android:fontFamily="serif"
+        android:textStyle="normal|bold"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtvwDrvName"
+        android:textColor="@color/sign_in_page_color"
+        android:textSize="@dimen/sign_in_text_size"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtvwDrvName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/txtvwDriverID"
+        android:textColor="@color/sign_in_page_color"
+        android:textSize="@dimen/sign_in_text_size"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtvwDriverID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:id="@+id/txtvwDrivVehType"
+        android:textColor="@color/sign_in_page_color"
+        android:textSize="@dimen/sign_in_text_size"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtvwDrivVehType"
+        android:layout_alignStart="@+id/txtvwDrivVehType"
+        android:layout_marginTop="42dp"
+        android:id="@+id/txtvwDrvTruckNum"
+        android:textColor="@color/sign_in_page_color"
+        android:textSize="@dimen/sign_in_text_size"
+        android:fontFamily="serif" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imgvwProfilePic"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/txtvwHomeHeading"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

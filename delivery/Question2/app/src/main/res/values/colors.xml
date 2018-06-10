@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#733edc</color>
+    <color name="colorPrimaryDark">#3f2aa0</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="sign_in_page_color">#fffeff</color>
+    <color name="sign_in_button_color">#030303</color>
+</resources>

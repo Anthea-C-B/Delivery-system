@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_customers_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.anthe.question2.customersSheet"
+    android:background="@color/cardview_shadow_end_color">
+
+    <TextView
+        android:text="@string/cust_sheet_customers_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/txtvwFullCustNme"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="serif"
+        android:textSize="@dimen/sign_in_text_size"/>
+
+    <TextView
+        android:text="@string/cust_sheet_customers_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/txtvwFullCustDet"
+        android:layout_below="@+id/txtvwFullCustNme"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="serif"
+        android:textSize="@dimen/sign_in_text_size"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/txtvwFullCustDet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/edTextIDNum"
+        android:hint="customers ID"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background" />
+
+    <TextView
+        android:text="Status of goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txtvwGoodsStatus"
+        android:layout_below="@+id/edTextIDNum"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="serif"
+        android:textSize="@dimen/sign_in_text_size"/>
+
+    <ImageButton
+        android:layout_width="80dp"
+        app:srcCompat="@drawable/googleg_standard_color_18"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imgBtnGoogleMaps"
+        android:layout_toEndOf="@+id/edTextIDNum"
+        android:layout_height="50dp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/txtvwGoodsStatus"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rdoGroupDelStat">
+
+        <RadioButton
+            android:text="Good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/txtvwGoodsStatus"
+            android:id="@+id/rdoBtnGood"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Damaged"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignStart="@+id/txtvwGoodsStatus"
+            android:layout_marginTop="18dp"
+            android:id="@+id/rdoBtnDamaged"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <Button
+        android:text="Delivery Completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelCompleted"
+        android:layout_below="@+id/rdoGroupDelStat"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentEnd="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        android:layout_alignTop="@+id/imgBtnGoogleMaps"
+        android:layout_alignParentStart="true"
+        android:id="@+id/fltingActionBtnMessage"
+        app:backgroundTint="@android:color/holo_blue_dark" />
+
+</RelativeLayout>
